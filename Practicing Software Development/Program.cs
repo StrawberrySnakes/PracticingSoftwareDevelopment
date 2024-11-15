@@ -30,7 +30,7 @@ namespace Practicing_Software_Development
         static void MainMenu()
         {
             // write out menu
-            Console.WriteLine("View PhoneBook \n    [0] Sorted by Name first name A-Z \n    [1] Sorted by last Name A-Z");
+            Console.WriteLine("View PhoneBook \n    [0] Sorted by Name first name A-Z \n    [1] Search");
             Console.WriteLine("Edit \n   [3] Add entry \n   [4] remove entry");
             Console.WriteLine("Or \n   [5] Close Phone Book ");
             Console.WriteLine("Please enter the number in the [] next your choice");
