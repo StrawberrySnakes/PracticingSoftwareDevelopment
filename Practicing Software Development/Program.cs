@@ -3,13 +3,14 @@ namespace Practicing_Software_Development
 {
     internal class Program
     {
-        static void Main(string[] args)
-        {
-            // pre-made Dictionary phoneBook with 3 entries Ethan with a Small upodate by Jayson
-            Dictionary<string, string> phoneBook = new Dictionary<string, string>
+        // pre-made Dictionary phoneBook with 3 entries Ethan with a Small upodate by Jayson
+       static Dictionary<string, string> phoneBook = new Dictionary<string, string>
         {
             {"Alvin", "555-1233"}, {"Brittany", "555-4567"}, {"Simon", "555-8910"}
         };
+        static void Main(string[] args)
+        {
+
 
             Console.WriteLine("Welcome to your Phone Book");
             MainMenu();
@@ -46,7 +47,7 @@ namespace Practicing_Software_Development
                     //Call Dessa's method
                     break;
                 case "3":
-                    // code call Tommys Method
+                    AddEntry();
                     break;
                 case "4":
                     // code call Jaysons Method
@@ -61,6 +62,24 @@ namespace Practicing_Software_Development
                     break;
             }
 
+        }
+        // Tommy
+        // Function that adds new entries to the phonebook
+        static void AddEntry()
+        {
+            Console.WriteLine("\nEnter the nane: ");
+            string name = Console.ReadLine();
+            Console.WriteLine("\nEnter the phone number: ");
+            string phoneNumber = Console.ReadLine();
+            if (!phoneBook.ContainsKey(name))
+            {
+                phoneBook.Add(name, phoneNumber);
+            }
+            else
+            {
+                Console.WriteLine("Name already exists in the phone book.");
+            }
+            MainMenu();
         }
     }
 }
