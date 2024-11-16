@@ -45,6 +45,7 @@ namespace Practicing_Software_Development
                     break;
                 case "2":
                     //Call Dessa's method
+                    SearchEntry();
                     break;
                 case "3":
                     AddEntry();
@@ -96,6 +97,23 @@ namespace Practicing_Software_Development
             {
                 phoneBook.Remove(key);
                 Console.WriteLine($"{key} removed from phonebook");
+            }
+            MainMenu();
+        }
+
+        //Dessa's functions that seaches using name
+        static void SearchEntry()
+        {
+            Console.WriteLine("\nEnter the nane: ");
+            string keyToFind = Console.ReadLine();
+            if (!phoneBook.ContainsKey(keyToFind))
+            {
+                Console.WriteLine($"{keyToFind} doens't exixst in the phonebook");
+            }
+            else
+            {
+                string number = phoneBook[keyToFind];
+                Console.WriteLine($"\n{keyToFind}: {number}\n");
             }
             MainMenu();
         }
