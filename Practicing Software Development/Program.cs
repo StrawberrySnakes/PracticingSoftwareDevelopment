@@ -51,6 +51,7 @@ namespace Practicing_Software_Development
                     break;
                 case "4":
                     // code call Jaysons Method
+                    RemoveEntry();
                     break;
                 case "5":
                     break;
@@ -78,6 +79,23 @@ namespace Practicing_Software_Development
             else
             {
                 Console.WriteLine("Name already exists in the phone book.");
+            }
+            MainMenu();
+        }
+
+        // Jayson's function that removes entries
+        static void RemoveEntry()
+        {
+            Console.WriteLine("\nEnter the nane: ");
+            string key = Console.ReadLine();
+            if (!phoneBook.ContainsKey(key))
+            {
+                Console.WriteLine($"{key} doens't exixst in the phonebook");
+            }
+            else
+            {
+                phoneBook.Remove(key);
+                Console.WriteLine($"{key} removed from phonebook");
             }
             MainMenu();
         }
