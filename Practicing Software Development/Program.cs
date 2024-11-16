@@ -10,21 +10,8 @@ namespace Practicing_Software_Development
         };
         static void Main(string[] args)
         {
-
-
             Console.WriteLine("Welcome to your Phone Book");
             MainMenu();
-            
-
-            // Sort dictionary alphabetically by keys
-            var sortedPhoneBook = phoneBook.OrderBy(pair => pair.Key).ToDictionary(pair => pair.Key, pair => pair.Value);
-
-            foreach (KeyValuePair<string, string> pair in sortedPhoneBook)
-            {
-                Console.WriteLine("{0}: {1}", pair.Key, pair.Value);
-            }
-
-            
         }
         // Jayson
         // Write out to the console the Menu Menu and handle the selected option
@@ -42,8 +29,9 @@ namespace Practicing_Software_Development
             {
                 case "0":
                     // Call Ethans Method
+                    DisplaySorted();
                     break;
-                case "2":
+                case "1":
                     //Call Dessa's method
                     SearchEntry();
                     break;
@@ -55,7 +43,8 @@ namespace Practicing_Software_Development
                     RemoveEntry();
                     break;
                 case "5":
-                    break;
+                    Console.WriteLine("Closing the phonebook, bye!");
+                    return;
 
                 default://  If they don't choose from one of the given options correctly remind them too and call the MainMenu Function Again
                     Console.Clear();
@@ -65,6 +54,20 @@ namespace Practicing_Software_Development
             }
 
         }
+
+        static void DisplaySorted()
+        {
+            Console.WriteLine("\nPhonebook sorted by name: ");
+            // Sort dictionary alphabetically by keys
+            var sortedPhoneBook = phoneBook.OrderBy(pair => pair.Key).ToDictionary(pair => pair.Key, pair => pair.Value);
+
+            foreach (KeyValuePair<string, string> pair in sortedPhoneBook)
+            {
+                Console.WriteLine("{0}: {1}", pair.Key, pair.Value);
+            }
+            MainMenu();
+        }
+
         // Tommy
         // Function that adds new entries to the phonebook
         static void AddEntry()
