@@ -1,0 +1,30 @@
+﻿Group 4: Jayson Packer, Tommy Seternus, Dessa Shapiro, and Ethan Shek
+What to do?
+* Pick a collection and an idea
+   * Queues - Printer Queue
+   * Stacks - Browser History
+   * Dictionary - Phone Book
+   * Pick whatever you want - Think of a cool task to simulate
+Brainstorm the program as a group
+   * Menus/Screens
+      * Start Menu
+      * Edit Menu
+      * PhoneBook Menu
+      * Contact Info
+   * Functionality
+      * Phonebook has 2/3 premade entries(Jayson)
+      * Add function to add more entries (Tommy)
+      * Add function to erase entries (Jayson)
+      * Add function to sort by first/last name (Ethan)
+      * Add function to search by name/ number (Dessa)
+      * Submenus have a main menu return option
+* Key:[firstName,lastName] Value[phoneNumber]
+* Dictionary Var Name: phoneBook
+* Sudo-code and stub out your program via comments
+   * outline the basic structure and functionalit
+* Code Your Program
+   * Committing to version control as you go
+* Test Your Program
+* Iterate and fix issues
+* Double-check the rubric to make sure your group gets all the points
+* Make your final submission
