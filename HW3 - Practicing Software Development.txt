@@ -1,0 +1,55 @@
+﻿Hw3
+Homework: Practicing Software Development
+
+
+Pick collection
+
+
+Grading Rubric
+
+
+Item
+	Notes
+	Points
+	Made a new VS project
+	
+
+	5
+	Have the project be backed up with version control and stored on gitHub
+	
+
+	5
+	Commits are appropriately named. 
+	IE: No “updated stuff” esq comments.
+	10
+	Work seems evenly distributed between group.
+	IE: One person didn’t do all the work in one single commit. 
+	10
+	Picked a collection type and an idea to simulate
+	IE We picked queues, and made a printer queue
+	10
+	Brainstorm the program as a group
+	Similar to how we did in class, take notes on this process in a google doc or something. 
+
+
+Save out and back up this doc in the root of your repo. 
+	10
+	Sudo-code and stub out your program via comments
+	I’ll look for these comments later on, so don’t delete them as you fill in the areas with appropriate code
+	10
+	Assign leads and tasks to people in the group
+	Example: Bobby will be responsible for checking to make sure that we are all remembering to check for user input errors in our appropriate code sections. If he notices that we forgot to do that in code that we write, then he will remind me.
+
+
+I’ll look for notes on who is assigned to what. You can either put these roles at the top of the program in a comment, or in a separate text file at the root of your repo
+	10
+	Older Concepts
+	Are you forgetting about other things we learned in class from previous weeks, or remembering to bring them into the future? Examples: following good OOP practices in your code? Error handling? Etc etc
+	10
+	Assignment core: Effectively use a collection type
+	Was the chosen collection type effectively demonstrated and used in this program
+	20
+	TOTAL
+	
+
+	100
