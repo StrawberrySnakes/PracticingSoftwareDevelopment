@@ -5,6 +5,7 @@ namespace GroupProjectTest
     internal class GroupProjectTest
     {
         // pre-made Dictionary phoneBook with 3 entries Ethan with a Small upodate by Jayson
+        // this dictionary initalizes 3 entries in the form of strings in the format of name, phone number
         static Dictionary<string, string> phoneBook = new Dictionary<string, string>
         {
             {"Alvin", "555-1233"},
@@ -18,6 +19,8 @@ namespace GroupProjectTest
         }
         // Jayson
         // Write out to the console the Menu Menu and handle the selected option
+        /* There are 4 functions of the phone book and based on the number chosen it will ... 
+        Sorted by Name first name A-Z, Search, Add entry, remove entry, close phone book*/
         static void MainMenu()
         {
             // write out menu
@@ -58,7 +61,7 @@ namespace GroupProjectTest
             }
 
         }
-
+        // This method will take the given phonebook and sort the entries alphabeticaly based on the String and then it will print in the console the new Dictionary entries in alphabetical order.
         static void DisplaySorted()
         {
             Console.WriteLine("\nPhonebook sorted by name: \n");
@@ -75,6 +78,8 @@ namespace GroupProjectTest
 
         // Tommy
         // Function that adds new entries to the phonebook
+        // This function ask for a name and phone number and if it does not contain it then a new entry will be add to the Dictionary
+        // If the entrie aleady exist no new entry will be add but instead "Name already exists in the phone book." will be printed in the console.
         static void AddEntry()
         {
             Console.WriteLine("\nEnter the name: ");
@@ -93,6 +98,8 @@ namespace GroupProjectTest
         }
 
         // Jayson's function that removes entries
+        // This function checks if a certain entry exist, if it does it will remove it from the Dictionary(phonebook)
+        // If the entry does not exist it no change will occur but instead the console will print "{key} doens't exixst in the phonebook"
         static void RemoveEntry()
         {
             Console.WriteLine("\nEnter the name: ");
@@ -110,6 +117,8 @@ namespace GroupProjectTest
         }
 
         //Dessa's functions that seaches using name
+        // This function will checks if a certain entry exist and if it does it will print our the name and phone number of that entry.
+        // If the entry does not exist it no change will occur but instead the console will print "{key} doens't exixst in the phonebook"
         static void SearchEntry()
         {
             Console.WriteLine("\nEnter the name: ");
